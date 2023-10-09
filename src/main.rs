@@ -11,5 +11,11 @@ struct Arguments {
 fn main() {
     let args = Arguments::parse();
 
-    println!("{}", args.message);
+    let message = &args.message;
+    let dashes = "-".repeat(message.len() + 2);
+    println!("         +{dashes}+");
+    println!("         | {message} |");
+    println!("         +{dashes}+");
+    println!("        /");
+    println!("≽(◕ ᴗ ◕)≼");
 }
