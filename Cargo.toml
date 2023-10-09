@@ -2,7 +2,7 @@
 name = "my-cool-first-cli"
 description = "A cool and cute CLI that prints stuff to the terminal."
 version = "0.1.0"
-author = "liv <shadows_withal@fastmail.com>"
+authors = ["liv <shadows_withal@fastmail.com>"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
