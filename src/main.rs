@@ -16,10 +16,12 @@ enum Commands {
     Say(SayCommand),
 }
 
-fn main() {
+fn main() -> anyhow::Result<()> {
     let args = Arguments::parse();
 
     match args.cmd {
-        Commands::Say(cmd) => cmd.run(),
-    }
+        Commands::Say(cmd) => cmd.run()?,
+    };
+
+    Ok(())
 }
